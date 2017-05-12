@@ -20,7 +20,9 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   },
   devServer: {
+    compress: true,
     historyApiFallback: true,
-    contentBase: './'
+    contentBase: './',
+    public: 'react-weather-asv0r.c9users.io'
   }
 };
