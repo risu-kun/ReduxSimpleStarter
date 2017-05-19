@@ -8,7 +8,6 @@ export const FETCH_WEATHER = 'FETCH_WEATHER'
 export function fetchWeather(city) {
     const url= `${OPEN_WEATHER_URL}q=${city},us&appid=${OPEN_WEATHER_KEY}`
     const request = axios.get(url)
-
     
     return {        // action creators return actions!
         type: FETCH_WEATHER,
